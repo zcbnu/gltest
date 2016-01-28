@@ -21,6 +21,7 @@ public:
     T x;
     T y;
     Point(T x_ = 0, T y_ = 0):x(x_),y(y_) {}
+    Point(const Point& p): x(p.x),y(p.y) {}
 };
 
 template<typename T>
@@ -48,6 +49,7 @@ class Leaf : public BTreeNode
 {
 public:
     Point<T> point;
+    Leaf(const Leaf& leaf) : point(leaf.point) {}
 };
 
 template <class T>
@@ -65,7 +67,7 @@ public:
     typedef BTreeNode * iterator;
     iterator top() {return _root;}
     iterator _to_iter(BTreeNode * node) {return node;}
-    iterator _set(iterator &_iter, BTreeNode * node, uint32_t idx)
+    iterator _set(iterator _iter, BTreeNode * node, uint32_t idx)
     {
         
         if (_iter)
@@ -82,15 +84,16 @@ public:
         
         return _to_iter(node);
     }
-    iterator setL(iterator &_iter, BTreeNode * node)
+    iterator setL(iterator _iter, BTreeNode * node)
     {
         return _set(_iter, node, 0);
     }
-    iterator setR(iterator &_iter, BTreeNode * node)
+    iterator setR(iterator _iter, BTreeNode * node)
     {
         return _set(_iter, node, 1);
     }
     
+    BTree(BTreeNode* node): _root(node) {}
 private:
     BTreeNode* _root;
 };
@@ -105,7 +108,12 @@ template <class T>
 BTreeNode * add_new_site(Leaf<T> &_base, Leaf<T> &site)
 {
     auto b = make_branch(_base.point, site.point);
-    
+    BTree t(b);
+    t.setL(t.top(), new Leaf<T>(_base));
+    BTree b1(make_branch(site.point, _base.point));
+    b1.setL(b1.top(), new Leaf<T>(site));
+    b1.setR(b1.top(), new Leaf<T>(_base));
+    t.setR(t.top(), b1.top());
 }
 
 #endif /* Voronoi_hpp */
