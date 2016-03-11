@@ -8,13 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		3F15F2F91C58D38A00515331 /* Voronoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F15F2F71C58D38A00515331 /* Voronoi.cpp */; };
+		3F548C391C5B7FB000D0A4D3 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA831541C15B09C00BDD683 /* libglfw3.a */; };
+		3F548C3B1C5B7FB000D0A4D3 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F548C3A1C5B7FB000D0A4D3 /* libfreeimage.a */; };
+		3F595FA11C5F0D5100B011A6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F595FA01C5F0D5100B011A6 /* Cocoa.framework */; };
+		3F595FA51C5F0D5D00B011A6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F595FA31C5F0D5D00B011A6 /* IOKit.framework */; };
+		3F595FA71C5F0DCB00B011A6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F595FA61C5F0DCB00B011A6 /* CoreVideo.framework */; };
+		3F5A7E261C90110D0060F542 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5A7E251C90110D0060F542 /* OpenGL.framework */; };
+		3F5A7E2F1C90128D0060F542 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A7E2E1C90128D0060F542 /* AppDelegate.m */; };
+		3F5A7E321C90128D0060F542 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A7E311C90128D0060F542 /* main.m */; };
+		3F5A7E351C90128D0060F542 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A7E341C90128D0060F542 /* ViewController.m */; };
+		3F5A7E371C90128D0060F542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A7E361C90128D0060F542 /* Assets.xcassets */; };
+		3F5A7E3A1C90128D0060F542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A7E381C90128D0060F542 /* Main.storyboard */; };
+		3F5A7E451C90128E0060F542 /* glfwTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A7E441C90128E0060F542 /* glfwTestTests.m */; };
+		3F5A7E501C90128E0060F542 /* glfwTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A7E4F1C90128E0060F542 /* glfwTestUITests.m */; };
+		3F5A7E671C9013240060F542 /* simple.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A7E661C9013240060F542 /* simple.c */; };
+		3F5A7E681C9013DF0060F542 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5A7E251C90110D0060F542 /* OpenGL.framework */; };
+		3F5A7E691C9013EA0060F542 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F595FA31C5F0D5D00B011A6 /* IOKit.framework */; };
+		3F5A7E6A1C9013FE0060F542 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F595FA61C5F0DCB00B011A6 /* CoreVideo.framework */; };
+		3F5A7E6B1C90140B0060F542 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F595FA01C5F0D5100B011A6 /* Cocoa.framework */; };
+		3F5A7E6C1C9014240060F542 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F548C3A1C5B7FB000D0A4D3 /* libfreeimage.a */; };
+		3F5A7E6D1C9014240060F542 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA831541C15B09C00BDD683 /* libglfw3.a */; };
+		3F5A7E6F1C9015770060F542 /* boing.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A7E6E1C9015770060F542 /* boing.c */; };
 		3FA8314C1C15AD9800BDD683 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FA8314B1C15AD9800BDD683 /* main.cpp */; };
-		3FA831551C15B09C00BDD683 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA831541C15B09C00BDD683 /* libglfw3.a */; };
 		3FA833611C18045700BDD683 /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FA8327B1C18045700BDD683 /* glm.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3F5A7E411C90128E0060F542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA831401C15AD9800BDD683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F5A7E2A1C90128D0060F542;
+			remoteInfo = glfwTest;
+		};
+		3F5A7E4C1C90128E0060F542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA831401C15AD9800BDD683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F5A7E2A1C90128D0060F542;
+			remoteInfo = glfwTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		3FA831461C15AD9800BDD683 /* CopyFiles */ = {
+		3F5A7E5D1C9012D00060F542 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,11 +60,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		3FA831461C15AD9800BDD683 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3F15F2F71C58D38A00515331 /* Voronoi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Voronoi.cpp; sourceTree = "<group>"; };
 		3F15F2F81C58D38A00515331 /* Voronoi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Voronoi.hpp; sourceTree = "<group>"; };
+		3F548C3A1C5B7FB000D0A4D3 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = gltest/libs/libfreeimage.a; sourceTree = "<group>"; };
+		3F595FA01C5F0D5100B011A6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3F595FA21C5F0D5D00B011A6 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		3F595FA31C5F0D5D00B011A6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		3F595FA61C5F0DCB00B011A6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3F5A7E251C90110D0060F542 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		3F5A7E2B1C90128D0060F542 /* glfwTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glfwTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5A7E2D1C90128D0060F542 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F5A7E2E1C90128D0060F542 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F5A7E311C90128D0060F542 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F5A7E331C90128D0060F542 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F5A7E341C90128D0060F542 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F5A7E361C90128D0060F542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F5A7E391C90128D0060F542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F5A7E3B1C90128D0060F542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5A7E401C90128D0060F542 /* glfwTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glfwTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5A7E441C90128E0060F542 /* glfwTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = glfwTestTests.m; sourceTree = "<group>"; };
+		3F5A7E461C90128E0060F542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5A7E4B1C90128E0060F542 /* glfwTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glfwTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5A7E4F1C90128E0060F542 /* glfwTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = glfwTestUITests.m; sourceTree = "<group>"; };
+		3F5A7E511C90128E0060F542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5A7E5F1C9012D00060F542 /* glfw-test-example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "glfw-test-example"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5A7E661C9013240060F542 /* simple.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = simple.c; path = gltest/examples/simple.c; sourceTree = SOURCE_ROOT; };
+		3F5A7E6E1C9015770060F542 /* boing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = boing.c; path = gltest/examples/boing.c; sourceTree = SOURCE_ROOT; };
 		3FA831481C15AD9800BDD683 /* gltest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gltest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA8314B1C15AD9800BDD683 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FA831541C15B09C00BDD683 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglfw3.a; sourceTree = "<group>"; };
@@ -289,23 +360,122 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F5A7E281C90128D0060F542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5A7E3D1C90128D0060F542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5A7E481C90128E0060F542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5A7E5C1C9012D00060F542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5A7E6C1C9014240060F542 /* libfreeimage.a in Frameworks */,
+				3F5A7E6D1C9014240060F542 /* libglfw3.a in Frameworks */,
+				3F5A7E6B1C90140B0060F542 /* Cocoa.framework in Frameworks */,
+				3F5A7E6A1C9013FE0060F542 /* CoreVideo.framework in Frameworks */,
+				3F5A7E691C9013EA0060F542 /* IOKit.framework in Frameworks */,
+				3F5A7E681C9013DF0060F542 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FA831451C15AD9800BDD683 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FA831551C15B09C00BDD683 /* libglfw3.a in Frameworks */,
+				3F5A7E261C90110D0060F542 /* OpenGL.framework in Frameworks */,
+				3F595FA71C5F0DCB00B011A6 /* CoreVideo.framework in Frameworks */,
+				3F595FA51C5F0D5D00B011A6 /* IOKit.framework in Frameworks */,
+				3F595FA11C5F0D5100B011A6 /* Cocoa.framework in Frameworks */,
+				3F548C3B1C5B7FB000D0A4D3 /* libfreeimage.a in Frameworks */,
+				3F548C391C5B7FB000D0A4D3 /* libglfw3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F5A7E2C1C90128D0060F542 /* glfwTest */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A7E2D1C90128D0060F542 /* AppDelegate.h */,
+				3F5A7E2E1C90128D0060F542 /* AppDelegate.m */,
+				3F5A7E331C90128D0060F542 /* ViewController.h */,
+				3F5A7E341C90128D0060F542 /* ViewController.m */,
+				3F5A7E361C90128D0060F542 /* Assets.xcassets */,
+				3F5A7E381C90128D0060F542 /* Main.storyboard */,
+				3F5A7E3B1C90128D0060F542 /* Info.plist */,
+				3F5A7E301C90128D0060F542 /* Supporting Files */,
+			);
+			path = glfwTest;
+			sourceTree = "<group>";
+		};
+		3F5A7E301C90128D0060F542 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A7E311C90128D0060F542 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F5A7E431C90128E0060F542 /* glfwTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A7E441C90128E0060F542 /* glfwTestTests.m */,
+				3F5A7E461C90128E0060F542 /* Info.plist */,
+			);
+			path = glfwTestTests;
+			sourceTree = "<group>";
+		};
+		3F5A7E4E1C90128E0060F542 /* glfwTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A7E4F1C90128E0060F542 /* glfwTestUITests.m */,
+				3F5A7E511C90128E0060F542 /* Info.plist */,
+			);
+			path = glfwTestUITests;
+			sourceTree = "<group>";
+		};
+		3F5A7E601C9012D00060F542 /* glfw-test-example */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A7E661C9013240060F542 /* simple.c */,
+				3F5A7E6E1C9015770060F542 /* boing.c */,
+			);
+			path = "glfw-test-example";
+			sourceTree = "<group>";
+		};
 		3FA8313F1C15AD9800BDD683 = {
 			isa = PBXGroup;
 			children = (
+				3F5A7E251C90110D0060F542 /* OpenGL.framework */,
+				3F595FA61C5F0DCB00B011A6 /* CoreVideo.framework */,
+				3F595FA21C5F0D5D00B011A6 /* CoreAudioKit.framework */,
+				3F595FA31C5F0D5D00B011A6 /* IOKit.framework */,
+				3F595FA01C5F0D5100B011A6 /* Cocoa.framework */,
+				3F548C3A1C5B7FB000D0A4D3 /* libfreeimage.a */,
 				3FA831561C15B19600BDD683 /* include */,
 				3FA831531C15B09C00BDD683 /* libs */,
 				3FA8314A1C15AD9800BDD683 /* gltest */,
+				3F5A7E2C1C90128D0060F542 /* glfwTest */,
+				3F5A7E431C90128E0060F542 /* glfwTestTests */,
+				3F5A7E4E1C90128E0060F542 /* glfwTestUITests */,
+				3F5A7E601C9012D00060F542 /* glfw-test-example */,
 				3FA831491C15AD9800BDD683 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -314,6 +484,10 @@
 			isa = PBXGroup;
 			children = (
 				3FA831481C15AD9800BDD683 /* gltest */,
+				3F5A7E2B1C90128D0060F542 /* glfwTest.app */,
+				3F5A7E401C90128D0060F542 /* glfwTestTests.xctest */,
+				3F5A7E4B1C90128E0060F542 /* glfwTestUITests.xctest */,
+				3F5A7E5F1C9012D00060F542 /* glfw-test-example */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -643,13 +817,83 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3F5A7E2A1C90128D0060F542 /* glfwTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5A7E521C90128E0060F542 /* Build configuration list for PBXNativeTarget "glfwTest" */;
+			buildPhases = (
+				3F5A7E271C90128D0060F542 /* Sources */,
+				3F5A7E281C90128D0060F542 /* Frameworks */,
+				3F5A7E291C90128D0060F542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfwTest;
+			productName = glfwTest;
+			productReference = 3F5A7E2B1C90128D0060F542 /* glfwTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F5A7E3F1C90128D0060F542 /* glfwTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5A7E551C90128E0060F542 /* Build configuration list for PBXNativeTarget "glfwTestTests" */;
+			buildPhases = (
+				3F5A7E3C1C90128D0060F542 /* Sources */,
+				3F5A7E3D1C90128D0060F542 /* Frameworks */,
+				3F5A7E3E1C90128D0060F542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F5A7E421C90128E0060F542 /* PBXTargetDependency */,
+			);
+			name = glfwTestTests;
+			productName = glfwTestTests;
+			productReference = 3F5A7E401C90128D0060F542 /* glfwTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F5A7E4A1C90128E0060F542 /* glfwTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5A7E581C90128E0060F542 /* Build configuration list for PBXNativeTarget "glfwTestUITests" */;
+			buildPhases = (
+				3F5A7E471C90128E0060F542 /* Sources */,
+				3F5A7E481C90128E0060F542 /* Frameworks */,
+				3F5A7E491C90128E0060F542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F5A7E4D1C90128E0060F542 /* PBXTargetDependency */,
+			);
+			name = glfwTestUITests;
+			productName = glfwTestUITests;
+			productReference = 3F5A7E4B1C90128E0060F542 /* glfwTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3F5A7E5E1C9012D00060F542 /* glfw-test-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5A7E631C9012D00060F542 /* Build configuration list for PBXNativeTarget "glfw-test-example" */;
+			buildPhases = (
+				3F5A7E5B1C9012D00060F542 /* Sources */,
+				3F5A7E5C1C9012D00060F542 /* Frameworks */,
+				3F5A7E5D1C9012D00060F542 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "glfw-test-example";
+			productName = "glfw-test-example";
+			productReference = 3F5A7E5F1C9012D00060F542 /* glfw-test-example */;
+			productType = "com.apple.product-type.tool";
+		};
 		3FA831471C15AD9800BDD683 /* gltest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FA8314F1C15AD9800BDD683 /* Build configuration list for PBXNativeTarget "gltest" */;
 			buildPhases = (
 				3FA831441C15AD9800BDD683 /* Sources */,
 				3FA831451C15AD9800BDD683 /* Frameworks */,
-				3FA831461C15AD9800BDD683 /* CopyFiles */,
+				3FA831461C15AD9800BDD683 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -669,6 +913,20 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "黄保应";
 				TargetAttributes = {
+					3F5A7E2A1C90128D0060F542 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					3F5A7E3F1C90128D0060F542 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3F5A7E2A1C90128D0060F542;
+					};
+					3F5A7E4A1C90128E0060F542 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3F5A7E2A1C90128D0060F542;
+					};
+					3F5A7E5E1C9012D00060F542 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					3FA831471C15AD9800BDD683 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -680,6 +938,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3FA8313F1C15AD9800BDD683;
 			productRefGroup = 3FA831491C15AD9800BDD683 /* Products */;
@@ -687,11 +946,76 @@
 			projectRoot = "";
 			targets = (
 				3FA831471C15AD9800BDD683 /* gltest */,
+				3F5A7E2A1C90128D0060F542 /* glfwTest */,
+				3F5A7E3F1C90128D0060F542 /* glfwTestTests */,
+				3F5A7E4A1C90128E0060F542 /* glfwTestUITests */,
+				3F5A7E5E1C9012D00060F542 /* glfw-test-example */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3F5A7E291C90128D0060F542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5A7E371C90128D0060F542 /* Assets.xcassets in Resources */,
+				3F5A7E3A1C90128D0060F542 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5A7E3E1C90128D0060F542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5A7E491C90128E0060F542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3F5A7E271C90128D0060F542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5A7E351C90128D0060F542 /* ViewController.m in Sources */,
+				3F5A7E321C90128D0060F542 /* main.m in Sources */,
+				3F5A7E2F1C90128D0060F542 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5A7E3C1C90128D0060F542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5A7E451C90128E0060F542 /* glfwTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5A7E471C90128E0060F542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5A7E501C90128E0060F542 /* glfwTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5A7E5B1C9012D00060F542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5A7E671C9013240060F542 /* simple.c in Sources */,
+				3F5A7E6F1C9015770060F542 /* boing.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FA831441C15AD9800BDD683 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -704,7 +1028,151 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3F5A7E421C90128E0060F542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F5A7E2A1C90128D0060F542 /* glfwTest */;
+			targetProxy = 3F5A7E411C90128E0060F542 /* PBXContainerItemProxy */;
+		};
+		3F5A7E4D1C90128E0060F542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F5A7E2A1C90128D0060F542 /* glfwTest */;
+			targetProxy = 3F5A7E4C1C90128E0060F542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F5A7E381C90128D0060F542 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5A7E391C90128D0060F542 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		3F5A7E531C90128E0060F542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = glfwTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11234.glfwTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F5A7E541C90128E0060F542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = glfwTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11234.glfwTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F5A7E561C90128E0060F542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = glfwTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11234.glfwTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/glfwTest.app/Contents/MacOS/glfwTest";
+			};
+			name = Debug;
+		};
+		3F5A7E571C90128E0060F542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = glfwTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11234.glfwTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/glfwTest.app/Contents/MacOS/glfwTest";
+			};
+			name = Release;
+		};
+		3F5A7E591C90128E0060F542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = glfwTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11234.glfwTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = glfwTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3F5A7E5A1C90128E0060F542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = glfwTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-11234.glfwTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = glfwTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		3F5A7E641C9012D00060F542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				ENABLE_TESTABILITY = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/gltest/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/gltest/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F5A7E651C9012D00060F542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/gltest/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/gltest/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		3FA8314D1C15AD9800BDD683 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -817,6 +1285,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F5A7E521C90128E0060F542 /* Build configuration list for PBXNativeTarget "glfwTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5A7E531C90128E0060F542 /* Debug */,
+				3F5A7E541C90128E0060F542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F5A7E551C90128E0060F542 /* Build configuration list for PBXNativeTarget "glfwTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5A7E561C90128E0060F542 /* Debug */,
+				3F5A7E571C90128E0060F542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F5A7E581C90128E0060F542 /* Build configuration list for PBXNativeTarget "glfwTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5A7E591C90128E0060F542 /* Debug */,
+				3F5A7E5A1C90128E0060F542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F5A7E631C9012D00060F542 /* Build configuration list for PBXNativeTarget "glfw-test-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5A7E641C9012D00060F542 /* Debug */,
+				3F5A7E651C9012D00060F542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3FA831431C15AD9800BDD683 /* Build configuration list for PBXProject "gltest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
