@@ -29,7 +29,7 @@ static GLfloat GL_PI = 3.14159f;
 
 
 //绘制场景
-
+void DrawNext();
 
 static
 void RenderSences(GLFWwindow * window)
@@ -109,11 +109,91 @@ void RenderSences(GLFWwindow * window)
     glPopMatrix();
     
 //    glFlush();
-    
+    DrawNext();
 }
 
+const GLchar* getVertexShaderData()
+{
+    return "\
+    void main()\
+    {\
+        gl_Position =ftransform();\
+    }\
+    ";
+}
 
+const GLchar* getFragmentShaderData()
+{
+    return "\
+    void main()\
+    {\
+        gl_FragColor =vec4(0.4,0.4,0.8,1.0);\
+    }\
+    ";
+}
 
+const GLchar* getBaseFragmentShaderData()
+{
+    return "\
+    void main() { \
+    gl_FragColor =vec4(0.4,0.4,0.0,1.0);\
+    }";
+}
+
+GLuint createVertexShader(const GLchar* shader)
+{
+    GLuint uShader = glCreateShader(GL_VERTEX_SHADER);
+    glShaderSource(uShader, 1, &shader, NULL);
+    glCompileShader(uShader);
+    return uShader;
+}
+
+GLuint createFragmentShader(const GLchar* shader)
+{
+    GLuint uShader = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(uShader, 1, &shader, NULL);
+    glCompileShader(uShader);
+    return uShader;
+}
+
+GLuint createGLProgram(const GLchar* VSDATA = getVertexShaderData(), const GLchar* FSDATA = getFragmentShaderData())
+{
+    // 通常情况下都需要验证 program 、shader 创建是否成功。这里偷懒了
+    GLuint program = glCreateProgram();
+    GLuint VS = createVertexShader(VSDATA);
+    GLuint FS = createFragmentShader(FSDATA);
+    glAttachShader(program, VS);
+    glAttachShader(program, FS);
+
+    glLinkProgram(program);
+    
+    return program;
+}
+
+void DrawNext()
+{
+    static float t;
+    glColor3f(1.0f, 1.0f, 0.f);
+    glPushMatrix();
+    auto p = createGLProgram();
+    glUseProgram(p);
+    auto loc = glGetUniformLocation(p, "t");
+    glUniform1f(loc, t);
+    glBegin(GL_POLYGON);
+    {
+        float len = 20.f;
+        for (float i = 0.f; i <= 360.f; i+= 20)
+        {
+            glVertex3f(len * sin(i), len * cos(i), 0);
+        }
+    }
+    glEnd();
+    auto p2 = createGLProgram(getVertexShaderData(), getBaseFragmentShaderData());
+    glLinkProgram(p2);
+    glUseProgram(NULL);
+    glUseProgram(p2);
+    glPopMatrix();
+}
 
 void ChangeSize(GLFWwindow* window, GLsizei w, GLsizei h)
 
