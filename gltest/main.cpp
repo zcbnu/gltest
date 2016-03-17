@@ -17,7 +17,8 @@
 #include <FreeImage.h>
 //#include <linmath.h>
 #include "Voronoi.hpp"
-
+#include <fstream>
+#include <sstream>
 using namespace glm;
 mat4x4 projection;
 
@@ -112,24 +113,32 @@ void RenderSences(GLFWwindow * window)
     DrawNext();
 }
 
-const GLchar* getVertexShaderData()
+const GLchar* getVertexShaderData(bool reload = false)
 {
-    return "\
-    void main()\
-    {\
-        gl_Position =ftransform();\
-    }\
-    ";
+    static GLchar* spData = nullptr;
+    if (spData != nullptr) return spData;
+    
+    fstream file;
+    file.open("/Users/huangbaoying/workspace/gltest/gltest/res/vertex.glsl");
+    std::string s;
+    spData = new GLchar[10240];
+    file.read(spData, sizeof(GLchar) * 10240);
+    
+    return spData;
 }
 
-const GLchar* getFragmentShaderData()
+const GLchar* getFragmentShaderData(bool reload = false)
 {
-    return "\
-    void main()\
-    {\
-        gl_FragColor =vec4(0.4,0.4,0.8,1.0);\
-    }\
-    ";
+    static GLchar* spData = nullptr;
+    if (spData != nullptr) return spData;
+    
+    fstream file;
+    file.open("/Users/huangbaoying/workspace/gltest/gltest/res/fragment.glsl");
+    std::string s;
+    spData = new GLchar[10240];
+    file.read(spData, sizeof(GLchar) * 10240);
+    
+    return spData;
 }
 
 const GLchar* getBaseFragmentShaderData()
@@ -190,7 +199,6 @@ void DrawNext()
     glEnd();
     auto p2 = createGLProgram(getVertexShaderData(), getBaseFragmentShaderData());
     glLinkProgram(p2);
-    glUseProgram(NULL);
     glUseProgram(p2);
     glPopMatrix();
 }
@@ -264,10 +272,37 @@ void SetupRC()
     glShadeModel(GL_FLAT);
 }
 
+void MoveView(float rotateH, float rotateV, vec3 direct)
+{
+    const static float STEP_H = 10.f;
+    const static float STEP_V = 10.f;
+    const static float STEP_MOVE = 10.f;
+    glMatrixMode(GL_MODELVIEW);
+    glRotatef(rotateH * STEP_H, 1.0f, 0.f, 0.f);
+    glRotatef(rotateV * STEP_V, 0.f, 1.0f, 0.f);
+
+    direct *= STEP_MOVE;
+//    glTranslatef(direct.x, direct.y, direct.z);
+    mat4 trans(1, 0, 0, 0,
+               0, 1, 0, 0,
+               0, 0, 1, 0,
+               direct.x, direct.y, direct.z, 1);
+    
+    glMultMatrixf((const float *)&trans);
+}
+
 void key_callback(GLFWwindow* window,int key,int scancode,int action,int modsBit)
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GL_TRUE);
+    if (key == GLFW_KEY_W)
+        MoveView(0, 0, vec3(0,0,-1.f));
+    if (key == GLFW_KEY_S)
+        MoveView(0, 0, vec3(0,0,1.f));
+    if (key == GLFW_KEY_A)
+        MoveView(0, 1, vec3());
+    if (key == GLFW_KEY_D)
+        MoveView(0, -1, vec3());
 }
 
 int main(int argc, const char * argv[]) {
