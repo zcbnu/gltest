@@ -29,6 +29,9 @@
 		3F5A7E6C1C9014240060F542 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F548C3A1C5B7FB000D0A4D3 /* libfreeimage.a */; };
 		3F5A7E6D1C9014240060F542 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA831541C15B09C00BDD683 /* libglfw3.a */; };
 		3F5A7E6F1C9015770060F542 /* boing.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A7E6E1C9015770060F542 /* boing.c */; };
+		3FA4F12C1C9A5483009DE018 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4F12B1C9A5482009DE018 /* res */; };
+		3FA4F12D1C9A5483009DE018 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4F12B1C9A5482009DE018 /* res */; };
+		3FA4F12E1C9A5483009DE018 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4F12B1C9A5482009DE018 /* res */; };
 		3FA8314C1C15AD9800BDD683 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FA8314B1C15AD9800BDD683 /* main.cpp */; };
 		3FA833611C18045700BDD683 /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FA8327B1C18045700BDD683 /* glm.cpp */; };
 /* End PBXBuildFile section */
@@ -99,6 +102,7 @@
 		3F5A7E5F1C9012D00060F542 /* glfw-test-example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "glfw-test-example"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5A7E661C9013240060F542 /* simple.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = simple.c; path = gltest/examples/simple.c; sourceTree = SOURCE_ROOT; };
 		3F5A7E6E1C9015770060F542 /* boing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = boing.c; path = gltest/examples/boing.c; sourceTree = SOURCE_ROOT; };
+		3FA4F12B1C9A5482009DE018 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = gltest/res; sourceTree = "<group>"; };
 		3FA831481C15AD9800BDD683 /* gltest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gltest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA8314B1C15AD9800BDD683 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3FA831541C15B09C00BDD683 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglfw3.a; sourceTree = "<group>"; };
@@ -463,6 +467,7 @@
 		3FA8313F1C15AD9800BDD683 = {
 			isa = PBXGroup;
 			children = (
+				3FA4F12B1C9A5482009DE018 /* res */,
 				3F5A7E251C90110D0060F542 /* OpenGL.framework */,
 				3F595FA61C5F0DCB00B011A6 /* CoreVideo.framework */,
 				3F595FA21C5F0D5D00B011A6 /* CoreAudioKit.framework */,
@@ -959,6 +964,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA4F12C1C9A5483009DE018 /* res in Resources */,
 				3F5A7E371C90128D0060F542 /* Assets.xcassets in Resources */,
 				3F5A7E3A1C90128D0060F542 /* Main.storyboard in Resources */,
 			);
@@ -968,6 +974,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA4F12D1C9A5483009DE018 /* res in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,6 +982,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA4F12E1C9A5483009DE018 /* res in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1292,6 +1300,7 @@
 				3F5A7E541C90128E0060F542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5A7E551C90128E0060F542 /* Build configuration list for PBXNativeTarget "glfwTestTests" */ = {
 			isa = XCConfigurationList;
@@ -1300,6 +1309,7 @@
 				3F5A7E571C90128E0060F542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5A7E581C90128E0060F542 /* Build configuration list for PBXNativeTarget "glfwTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -1308,6 +1318,7 @@
 				3F5A7E5A1C90128E0060F542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5A7E631C9012D00060F542 /* Build configuration list for PBXNativeTarget "glfw-test-example" */ = {
 			isa = XCConfigurationList;
@@ -1316,6 +1327,7 @@
 				3F5A7E651C9012D00060F542 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FA831431C15AD9800BDD683 /* Build configuration list for PBXProject "gltest" */ = {
 			isa = XCConfigurationList;
