@@ -115,13 +115,11 @@ void RenderSences(GLFWwindow * window)
 
 const GLchar* getVertexShaderData(bool reload = false)
 {
-    static GLchar* spData = nullptr;
-    if (spData != nullptr) return spData;
+    static GLchar* spData = new GLchar[10240];
     
     fstream file;
     file.open("/Users/huangbaoying/workspace/gltest/gltest/res/vertex.glsl");
     std::string s;
-    spData = new GLchar[10240];
     file.read(spData, sizeof(GLchar) * 10240);
     
     return spData;
@@ -129,13 +127,11 @@ const GLchar* getVertexShaderData(bool reload = false)
 
 const GLchar* getFragmentShaderData(bool reload = false)
 {
-    static GLchar* spData = nullptr;
-    if (spData != nullptr) return spData;
+    static GLchar* spData = new GLchar[10240];
     
     fstream file;
     file.open("/Users/huangbaoying/workspace/gltest/gltest/res/fragment.glsl");
     std::string s;
-    spData = new GLchar[10240];
     file.read(spData, sizeof(GLchar) * 10240);
     
     return spData;
@@ -207,7 +203,7 @@ void ChangeSize(GLFWwindow* window, GLsizei w, GLsizei h)
 
 {
     
-    GLfloat nRange = 100.0f;
+    GLfloat nRange = 50;
     
     
     if (h == 0)
@@ -226,9 +222,7 @@ void ChangeSize(GLFWwindow* window, GLsizei w, GLsizei h)
     glMatrixMode(GL_PROJECTION);
     
     glLoadIdentity();
-    
-    
-    
+
     
     //设置可视区域
     
@@ -238,8 +232,8 @@ void ChangeSize(GLFWwindow* window, GLsizei w, GLsizei h)
     if (w <= h)
         
     {
-        
-        glOrtho(-nRange, nRange, -nRange/aspect, nRange/aspect, -nRange, nRange);
+        glFrustum(-nRange, nRange, -nRange/aspect, nRange/aspect, nRange, nRange*100);
+//        glOrtho(-nRange, nRange, -nRange/aspect, nRange/aspect, -nRange, nRange);
         
     }
     
@@ -247,8 +241,8 @@ void ChangeSize(GLFWwindow* window, GLsizei w, GLsizei h)
     else
         
     {
-        
-        glOrtho(-nRange*aspect, nRange*aspect, -nRange, nRange, -nRange, nRange);
+        glFrustum(-nRange*aspect, nRange*aspect, -nRange, nRange, nRange, nRange*100);
+//        glOrtho(-nRange*aspect, nRange*aspect, -nRange, nRange, -nRange, nRange);
         
     }
     
@@ -257,7 +251,7 @@ void ChangeSize(GLFWwindow* window, GLsizei w, GLsizei h)
     glMatrixMode(GL_MODELVIEW);
     
     glLoadIdentity();
-    
+    glTranslatef(0, 0, -100);
 }
 
 
@@ -278,17 +272,14 @@ void MoveView(float rotateH, float rotateV, vec3 direct)
     const static float STEP_V = 10.f;
     const static float STEP_MOVE = 10.f;
     glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+//    glTranslatef(0, 0, -100);
+
     glRotatef(rotateH * STEP_H, 1.0f, 0.f, 0.f);
     glRotatef(rotateV * STEP_V, 0.f, 1.0f, 0.f);
 
-    direct *= STEP_MOVE;
-//    glTranslatef(direct.x, direct.y, direct.z);
-    mat4 trans(1, 0, 0, 0,
-               0, 1, 0, 0,
-               0, 0, 1, 0,
-               direct.x, direct.y, direct.z, 1);
+    glTranslatef(direct.x, direct.y, direct.z);
     
-    glMultMatrixf((const float *)&trans);
 }
 
 void key_callback(GLFWwindow* window,int key,int scancode,int action,int modsBit)
