@@ -78,6 +78,8 @@
 /* Begin PBXFileReference section */
 		3F15F2F71C58D38A00515331 /* Voronoi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Voronoi.cpp; sourceTree = "<group>"; };
 		3F15F2F81C58D38A00515331 /* Voronoi.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Voronoi.hpp; sourceTree = "<group>"; };
+		3F4855DF1C9BFBC500375CE1 /* DrawHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawHelper.h; sourceTree = "<group>"; };
+		3F4855E01C9BFBF200375CE1 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		3F548C3A1C5B7FB000D0A4D3 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = gltest/libs/libfreeimage.a; sourceTree = "<group>"; };
 		3F595FA01C5F0D5100B011A6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3F595FA21C5F0D5D00B011A6 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
@@ -503,6 +505,8 @@
 				3FA8314B1C15AD9800BDD683 /* main.cpp */,
 				3F15F2F71C58D38A00515331 /* Voronoi.cpp */,
 				3F15F2F81C58D38A00515331 /* Voronoi.hpp */,
+				3F4855DF1C9BFBC500375CE1 /* DrawHelper.h */,
+				3F4855E01C9BFBF200375CE1 /* Singleton.h */,
 			);
 			path = gltest;
 			sourceTree = "<group>";
